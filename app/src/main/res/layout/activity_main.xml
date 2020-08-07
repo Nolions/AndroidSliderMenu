@@ -27,14 +27,8 @@
 
         </RelativeLayout>
 
-        <com.google.android.material.navigation.NavigationView
-            android:id="@+id/slideMenu"
-            android:layout_width="240dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="start"
-            android:background="#cccccc"
-            app:headerLayout="@layout/slide_header"
-            app:menu="@menu/slide_menu" />
+        <include layout="@layout/include_left_slide_menu" />
+        <include layout="@layout/include_right_slide_layout" />
 
 
     </androidx.drawerlayout.widget.DrawerLayout>
