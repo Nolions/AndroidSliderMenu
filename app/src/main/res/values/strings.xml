@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidSliderMenuDemo</string>
+    <string name="home">Home</string>
+    <string name="account">Accunt</string>
+    <string name="email">Email</string>
+    <string name="more">More</string>
+</resources>
