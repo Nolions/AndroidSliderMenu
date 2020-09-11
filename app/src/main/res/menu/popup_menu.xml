@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/popupMenuHome"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/popupMenuAccount"
+        android:icon="@drawable/ic_account"
+        android:title="@string/account"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/popupMenuEmail"
+        android:icon="@drawable/ic_email"
+        android:title="@string/email"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/popupMenuDone"
+        android:icon="@drawable/ic_done"
+        android:title="@string/done"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/popupMenuExit"
+        android:icon="@drawable/ic_exit"
+        android:title="@string/exit"
+        app:showAsAction="never" />
+</menu>

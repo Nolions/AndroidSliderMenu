@@ -1,6 +1,8 @@
 package tw.nolions.androidslidermenudemo
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.navigation.NavigationView
@@ -15,9 +17,17 @@ class MainActivity : AppCompatActivity() {
 
         // toolbar
         setSupportActionBar(toolbar)
-        val actionBarDrawerToggle = ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.drawer_open, R.string.drawer_close)
+
+        val actionBarDrawerToggle = ActionBarDrawerToggle(
+            this,
+            drawerLayout,
+            toolbar,
+            R.string.drawer_open,
+            R.string.drawer_close
+        )
         drawerLayout.addDrawerListener(actionBarDrawerToggle)
         actionBarDrawerToggle.syncState()
+
 
         slideMenu.setNavigationItemSelectedListener(NavigationView.OnNavigationItemSelectedListener { menuItem ->
             text.text = when (menuItem.itemId) {
@@ -30,5 +40,33 @@ class MainActivity : AppCompatActivity() {
 
             true
         })
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.popup_menu, menu)
+
+
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.popupMenuHome -> {
+                // TODO
+            }
+            R.id.popupMenuAccount -> {
+                // TODO
+            }
+            R.id.popupMenuDone -> {
+                // TODO
+            }
+            R.id.popupMenuEmail -> {
+                // TODO
+            }
+            R.id.popupMenuExit -> {
+                // TODO
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }

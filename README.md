@@ -1,6 +1,6 @@
 # AndroidSliderMenuDemo
 
-Android DrawerLayout 實作左右滑動選單
+Android 實作左右滑動選單& Popup 選單
 
 ## Install
 
@@ -175,3 +175,25 @@ val actionBarDrawerToggle = ActionBarDrawerToggle(
 drawerLayout.addDrawerListener(actionBarDrawerToggle)
 actionBarDrawerToggle.syncState()
 ```
+
+## Topbar上添加`popupmenu`
+
+添加以下程式碼到你的activity或fragment java or kotlin 程式碼中
+
+```
+override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    menuInflater.inflate(R.menu.popup_menu, menu)
+
+    return true
+}
+```
+
+### showAsAction param
+
+|value|describe|
+|-----|--------|
+| ifRoom | 根據寬度來決定是顯示在上層，還是只顯示在下層選單中 |
+| withText | 顯示標題，需搭配always或ifRoom使用才有效過(EX: always|withText) |
+| never | 隱藏在下層選單中，預設值 |
+| always | 總是出現最上增 |
+| collapseActionView | |

@@ -11,4 +11,6 @@
     <string name="close">off</string>
     <string name="open">on</string>
     <string name="lock">lock</string>
+    <string name="exit">Exit</string>
+    <string name="done">Done</string>
 </resources>
