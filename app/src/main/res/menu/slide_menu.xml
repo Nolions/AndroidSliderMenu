@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/sidleMenuHome"
         android:icon="@drawable/ic_home"
@@ -16,4 +17,14 @@
         android:id="@+id/sidleMenuMore"
         android:icon="@drawable/ic_more_horiz"
         android:title="@string/more" />
+
+    <item
+        android:icon="@drawable/ic_power_settings"
+        android:title="@string/on_of"
+        app:actionViewClass="androidx.appcompat.widget.SwitchCompat" />
+
+    <item
+        android:icon="@drawable/ic_unlock"
+        android:title="@string/lock"
+        app:actionLayout="@layout/switch_compat_layout" />
 </menu>
